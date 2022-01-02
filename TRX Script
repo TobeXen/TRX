@@ -1,3 +1,5 @@
+-- Instances:
+
 local TRXScript = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local lable = Instance.new("TextLabel")
@@ -11,7 +13,7 @@ local Open = Instance.new("TextButton")
 --Properties:
 
 TRXScript.Name = "TRX Script"
-TRXScript.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+TRXScript.Parent = game.CoreGui
 TRXScript.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 main.Name = "main"
