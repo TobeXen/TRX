@@ -61,11 +61,7 @@ ClickTP.TextColor3 = Color3.fromRGB(0, 0, 0)
 ClickTP.TextSize = 24.000
 ClickTP.MouseButton1Down:connect(function()
 	--[[
-Â© 2021 WeAreDevs
-A distribution of https://wearedevs.net/scripts
-Created August 2, 2021
-
-Directions: 
+	Directions: 
 1. Inject this script into any game using a Lua injector like JJSploit. 
 2. Press left ctrl + click to where you want to teleport
 Re-execute the script to toggle click teleport
@@ -114,12 +110,7 @@ ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
 ESP.TextSize = 24.000
 ESP.MouseButton1Down:connect(function()
 	--[[
-A distribution of https://wearedevs.net/scripts
-Created August 17, 2021, Last updated August 17, 2021
-
-Description: Draws boxes around each player.
-
-Credits to "Real Panda" for their ESP library
+	Description: Draws boxes around each player.
 
 Instruction: Edit the settings as desired below and execute the script.
 
@@ -626,9 +617,6 @@ Aimbot.Text = "Aimbot"
 Aimbot.TextColor3 = Color3.fromRGB(0, 0, 0)
 Aimbot.TextSize = 24.000
 Aimbot.MouseButton1Down:connect(function()
-	-- Copyright https://WeAreDevs.net 2019
-	-- https://wearedevs.net/exploits
-
 	--[[ Configuration ]]--
 
 	--If true, 
@@ -654,21 +642,12 @@ Aimbot.MouseButton1Down:connect(function()
 	_G.WRDAimBotWallcheck = false
 
     --[[ 
-    
     Additional Notes | August 17, 2019
-    
-    *This was made for exploits using the WeAreDevs API, such as JJSploit.
-    *Please don't steal credits. I worked pretty hard on this ;c
-    *This should be able to work in all games using default Roblox character systems. Games using using custom/modified characters may be buggy, such as Strucid and Phantom Forces.
-    *You don't need to rexecute the entire script to change configuration above. You could simply execute the desired configuration line.
     *Rexecuting the script should not cause issues
     *The WRDAimbotBypass enabled bug involving players behind you will be fixed eventually. Be sure to check the website time to time!
     *Aimbot starts when you hold the right mouse button
     *This aimbot snaps aims to the closest player's head.
     *Please change the configuration below appropriately.
-    *Check the website occasionally for updates!
-    *Found a new bug? Report it on the forum: https://wearedevs.net/forum/complaints
-    
     ]]--
 
 
