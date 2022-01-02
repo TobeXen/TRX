@@ -94,9 +94,9 @@ Re-execute the script to toggle click teleport
 		_G.WRDClickTeleport = not _G.WRDClickTeleport
 		--Notify
 		if _G.WRDClickTeleport then
-			game.StarterGui:SetCore("SendNotification", {Title="WeAreDevs.net"; Text="Click teleport enabled"; Duration=5;})
+			game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.0"; Text="Click teleport enabled"; Duration=5;})
 		else
-			game.StarterGui:SetCore("SendNotification", {Title="WeAreDevs.net"; Text="Click teleport disabled"; Duration=5;})
+			game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.0"; Text="Click teleport disabled"; Duration=5;})
 		end
 	end
 end)
