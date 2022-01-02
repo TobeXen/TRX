@@ -48,13 +48,13 @@ Speed.MouseButton1Down:connect(function()
 	game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = (speed * 1.5)
 end)
 
-ClickTP.Name = "Invisable Fling"
+ClickTP.Name = "Click TP"
 ClickTP.Parent = main
 ClickTP.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
 ClickTP.Position = UDim2.new(0.0353080034, 0, 0.358108103, 0)
 ClickTP.Size = UDim2.new(0, 271, 0, 17)
 ClickTP.Font = Enum.Font.SourceSans
-ClickTP.Text = "Invisable Fling"
+ClickTP.Text = "Hold ctrl Then Click to TP"
 ClickTP.TextColor3 = Color3.fromRGB(0, 0, 0)
 ClickTP.TextSize = 24.000
 ClickTP.MouseButton1Down:connect(function()
@@ -101,13 +101,13 @@ Re-execute the script to toggle click teleport
 	end
 end)
 
-ESP.Name = "God Mode"
+ESP.Name = "ESP"
 ESP.Parent = main
 ESP.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
 ESP.Position = UDim2.new(0.0350000001, 0, 0.513000011, 0)
 ESP.Size = UDim2.new(0, 271, 0, 17)
 ESP.Font = Enum.Font.SourceSans
-ESP.Text = "God Mode"
+ESP.Text = "ESP"
 ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
 ESP.TextSize = 24.000
 ESP.MouseButton1Down:connect(function()
@@ -639,13 +639,13 @@ Fly.MouseButton1Down:connect(function()
 	Fly()
 end)
 
-Aimbot.Name = "Aimlock"
+Aimbot.Name = "Aimbot"
 Aimbot.Parent = main
 Aimbot.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
 Aimbot.Position = UDim2.new(0.0350000001, 0, 0.823000014, 0)
 Aimbot.Size = UDim2.new(0, 271, 0, 17)
 Aimbot.Font = Enum.Font.SourceSans
-Aimbot.Text = "Aimlock"
+Aimbot.Text = "Aimbot"
 Aimbot.TextColor3 = Color3.fromRGB(0, 0, 0)
 Aimbot.TextSize = 24.000
 Aimbot.MouseButton1Down:connect(function()
