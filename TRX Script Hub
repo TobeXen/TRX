@@ -1,5 +1,4 @@
 --Instances:
-
 local TRXScriptHub = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local label = Instance.new("TextLabel")
@@ -10,21 +9,22 @@ local TRXScriptBETA = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
 
 --Properties:
-
 TRXScriptHub.Name = "TRX Script Hub"
 TRXScriptHub.Parent = game.CoreGui
 TRXScriptHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
+--The background
 main.Name = "main"
 main.Parent = TRXScriptHub
 main.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 main.BorderSizePixel = 0
-main.Position = UDim2.new(0.308192104, 0, 0.39665553, 0)
+main.Position = UDim2.new(0.376, 0, 0.376, 0)
 main.Size = UDim2.new(0, 287, 0, 123)
 main.Visible = false
 main.Active = true
 main.Draggable = true
 
+--The top bar thingy
 label.Name = "label"
 label.Parent = main
 label.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -37,6 +37,7 @@ label.TextColor3 = Color3.fromRGB(255, 255, 255)
 label.TextSize = 14.000
 label.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
+--Bruh Hub button
 BruhHub.Name = "Bruh Hub"
 BruhHub.Parent = main
 BruhHub.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
@@ -46,10 +47,12 @@ BruhHub.Font = Enum.Font.SourceSans
 BruhHub.Text = "Open Bruh Hub"
 BruhHub.TextColor3 = Color3.fromRGB(0, 0, 0)
 BruhHub.TextSize = 16.000
+	--Loadstring for Bruh Hub
 BruhHub.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
 end)
 
+--Infinite Yeild Button
 InfiniteYeild.Name = "Infinite Yeild"
 InfiniteYeild.Parent = main
 InfiniteYeild.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
@@ -59,10 +62,12 @@ InfiniteYeild.Font = Enum.Font.SourceSans
 InfiniteYeild.Text = "Open Infinite Yeild"
 InfiniteYeild.TextColor3 = Color3.fromRGB(0, 0, 0)
 InfiniteYeild.TextSize = 16.000
+	--Loadstring for Infinite Yeild
 InfiniteYeild.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://pastebin.com/raw/tzTXmYf2'),true))()
 end)
 
+--Premier Hub Button
 PremierHub.Name = "Premier  Hub"
 PremierHub.Parent = main
 PremierHub.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
@@ -72,10 +77,12 @@ PremierHub.Font = Enum.Font.SourceSans
 PremierHub.Text = "Open Premier Hub"
 PremierHub.TextColor3 = Color3.fromRGB(0, 0, 0)
 PremierHub.TextSize = 16.000
+	--Loadstring for Premier Hub
 PremierHub.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/PremierHub/Data/main/code.lua"))()
 end)
 
+--TRX Script (BETA) Button
 TRXScriptBETA.Name = "TRX Script (BETA)"
 TRXScriptBETA.Parent = main
 TRXScriptBETA.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
@@ -85,10 +92,12 @@ TRXScriptBETA.Font = Enum.Font.SourceSans
 TRXScriptBETA.Text = "TRX Script (BETA)"
 TRXScriptBETA.TextColor3 = Color3.fromRGB(0, 0, 0)
 TRXScriptBETA.TextSize = 16.000
+	--Loadstring for TRX Script V1.0
 TRXScriptBETA.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/TobeXen/TRX-Executor/main/TRX%20Script"))()
 end)
 
+--The TRX Button
 Open.Name = "Open"
 Open.Parent = TRXScriptHub
 Open.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
@@ -102,7 +111,9 @@ Open.TextWrapped = true
 Open.MouseButton1Down:connect(function()
 	if main.Visible == false then
 		main.Visible = true
+		Open.Text = "Close"
 	else
 		main.Visible = false
+		Open.Text = "TRX"
 	end
 end)
