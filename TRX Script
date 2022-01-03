@@ -19,7 +19,7 @@ TRXScript.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 main.Name = "main"
 main.Parent = TRXScript
 main.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-main.Position = UDim2.new(0.303672314, 0, 0.640468299, 0)
+main.Position = UDim2.new(0.376, 0, 0.376, 0)
 main.Size = UDim2.new(0, 293, 0, 148)
 main.Visible = false
 main.Active = true
@@ -44,6 +44,7 @@ Speed.Text = "Speed 100"
 Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
 Speed.TextSize = 24.000
 Speed.MouseButton1Down:connect(function()
+	--Speed
 	local speed = 100
 
 	game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = speed
@@ -679,13 +680,15 @@ Open.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
 Open.Position = UDim2.new(0, 0, 0.498327792, 0)
 Open.Size = UDim2.new(0, 43, 0, 38)
 Open.Font = Enum.Font.SourceSans
-Open.Text = "Script"
+Open.Text = "TRX S"
 Open.TextColor3 = Color3.fromRGB(0, 0, 0)
 Open.TextSize = 16.000
 Open.MouseButton1Down:connect(function()
 	if main.Visible == false then
 		main.Visible = true
+		Open.Text = "Close"
 	else
 		main.Visible = false
+		Open.Text = "TRX S"
 	end
 end)
