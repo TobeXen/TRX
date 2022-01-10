@@ -108,6 +108,8 @@ Open.Text = "TRX"
 Open.TextColor3 = Color3.fromRGB(0, 0, 0)
 Open.TextSize = 19.000
 Open.TextWrapped = true
+Open.Active = true
+Open.Draggable = true
 Open.MouseButton1Down:connect(function()
 	if main.Visible == false then
 		main.Visible = true
