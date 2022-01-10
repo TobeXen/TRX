@@ -683,6 +683,8 @@ Open.Font = Enum.Font.SourceSans
 Open.Text = "TRX S"
 Open.TextColor3 = Color3.fromRGB(0, 0, 0)
 Open.TextSize = 16.000
+Open.Active = true
+Open.Draggable = true
 Open.MouseButton1Down:connect(function()
 	if main.Visible == false then
 		main.Visible = true
