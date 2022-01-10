@@ -11,6 +11,8 @@ local ESP = Instance.new("TextButton")
 local ForceShiftLock = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
 
+game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.4"; Text="Loaded"; Duration=5;})
+
 --Properties:
 
 TRXScript.Name = "TRX Script"
