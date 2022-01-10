@@ -8,6 +8,8 @@ local PremierHub = Instance.new("TextButton")
 local TRXScriptBETA = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
 
+game.StarterGui:SetCore("SendNotification", {Title="TRX Script Hub V1.5"; Text="Loaded"; Duration=5;})
+
 --Properties:
 TRXScriptHub.Name = "TRX Script Hub"
 TRXScriptHub.Parent = game.CoreGui
@@ -32,7 +34,7 @@ label.BorderSizePixel = 0
 label.Position = UDim2.new(4.42378223e-09, 0, 0, 0)
 label.Size = UDim2.new(0, 287, 0, 22)
 label.Font = Enum.Font.SourceSans
-label.Text = "TRX Script Hub V1.4"
+label.Text = "TRX Script Hub V1.5"
 label.TextColor3 = Color3.fromRGB(255, 255, 255)
 label.TextSize = 14.000
 label.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -92,7 +94,7 @@ TRXScriptBETA.Font = Enum.Font.SourceSans
 TRXScriptBETA.Text = "TRX Script (BETA)"
 TRXScriptBETA.TextColor3 = Color3.fromRGB(0, 0, 0)
 TRXScriptBETA.TextSize = 16.000
-	--Loadstring for TRX Script V1.0
+	--Loadstring for TRX Script V1.4
 TRXScriptBETA.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/TobeXen/TRX-Executor/main/TRX%20Script"))()
 end)
