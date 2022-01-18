@@ -216,7 +216,7 @@ TRXScriptBETA.TextColor3 = Color3.fromRGB(0, 0, 0)
 TRXScriptBETA.TextSize = 16.000
 --Loadstring for TRX Script V1.5
 TRXScriptBETA.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/TobeXen/TRX-Scripts/main/TRX%20Script"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/TobeXen/TRX-Scripts/main/TRX%20Script.lua"))()
 end)
 
 Open.Name = "Open"
