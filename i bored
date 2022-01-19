@@ -1,0 +1,136 @@
+local TRXScript = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local lable = Instance.new("TextLabel")
+local Btools = Instance.new("TextButton")
+local InfiniteYeild = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
+local Gravity = Instance.new("TextButton")
+local TRXScriptBETA = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+
+game.StarterGui:SetCore("SendNotification", {Title="TRX Script school edition"; Text="Loaded"; Duration=5;})
+
+TRXScript.Name = "TRX Script"
+TRXScript.Parent = game.CoreGui
+TRXScript.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = TRXScript
+main.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0.375999987, 0, 0.375999987, 0)
+main.Size = UDim2.new(0, 287, 0, 124)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+label.Name = "label"
+label.Parent = main
+label.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+label.BorderSizePixel = 0
+label.Position = UDim2.new(4.42378223e-09, 0, 0, 0)
+label.Size = UDim2.new(0, 287, 0, 22)
+label.Font = Enum.Font.SourceSans
+label.Text = "TRX Script school edition"
+label.TextColor3 = Color3.fromRGB(255, 255, 255)
+label.TextSize = 14.000
+label.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Btools.Name = "Btools"
+Btools.Parent = main
+Btools.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
+Btools.Position = UDim2.new(0.0248962827, 0, 0.209390029, 0)
+Btools.Size = UDim2.new(0, 271, 0, 17)
+Btools.Font = Enum.Font.SourceSans
+Btools.Text = "Execute Btools"
+Btools.TextColor3 = Color3.fromRGB(0, 0, 0)
+Btools.TextSize = 35.000
+Btools.MouseButton1Down:connect(function()
+	backpack = game:GetService("Players").LocalPlayer.Backpack
+	
+	hammer = Instance.new("HopperBin")
+	hammer.Name = "Hammer"
+	hammer.BinType = 4
+	hammer.Parent = backpack
+	
+	cloneTool = Instance.new("HopperBin")
+	cloneTool.Name = "Clone"
+	cloneTool.BinType = 3
+	cloneTool.Parent = backpack
+	
+	grabTool = Instance.new("HopperBin")
+	grabTool.Name = "Grab"
+	grabTool.BinType = 2
+	grabTool.Parent = backpack
+end)
+
+InfiniteYeild.Name = "Infinite Yeild"
+InfiniteYeild.Parent = main
+InfiniteYeild.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
+InfiniteYeild.Position = UDim2.new(0.0250000004, 0, 0.361000001, 0)
+InfiniteYeild.Size = UDim2.new(0, 271, 0, 17)
+InfiniteYeild.Font = Enum.Font.SourceSans
+InfiniteYeild.Text = "Open Infinite Yerp"
+InfiniteYeild.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYeild.TextSize = 16.000
+InfiniteYeild.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/tzTXmYf2'),true))()
+end)
+
+Fly.Name = "Fly"
+Fly.Parent = main
+Fly.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
+Fly.Position = UDim2.new(0.0250000004, 0, 0.513000011, 0)
+Fly.Size = UDim2.new(0, 271, 0, 17)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly then f to toggle"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextSize = 16.000
+Fly.MouseButton1Down:connect(function()
+	loadsring(game:HttpGet("https://cdn.wearedevs.net/scripts/PF%20Easy%20Fly.txt"))()
+end)
+
+Gravity.Name = "Gravity"
+Gravity.Parent = main
+Gravity.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
+Gravity.Position = UDim2.new(0.0250000004, 0, 0.665000021, 0)
+Gravity.Size = UDim2.new(0, 271, 0, 17)
+Gravity.Font = Enum.Font.SourceSans
+Gravity.Text = "Game gravity e to toggle"
+Gravity.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gravity.TextSize = 16.000
+Gravity.MouseButton1Down:connect(function()
+	loadsring(game:HttpGet("https://cdn.wearedevs.net/scripts/Gravity%20Switch.txt"))()
+end)
+
+TRXScriptBETA.Name = "TRX Script (BETA)"
+TRXScriptBETA.Parent = main
+TRXScriptBETA.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
+TRXScriptBETA.Position = UDim2.new(0.0250000004, 0, 0.816999972, 0)
+TRXScriptBETA.Size = UDim2.new(0, 271, 0, 17)
+TRXScriptBETA.Font = Enum.Font.SourceSans
+TRXScriptBETA.Text = "TRX Script (BETA)"
+TRXScriptBETA.TextColor3 = Color3.fromRGB(0, 0, 0)
+TRXScriptBETA.TextSize = 16.000
+TRXScriptBETA.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/TobeXen/TRX-Scripts/main/TRX%20Script.lua"))()
+end)
+  
+Open.Name = "Open"
+Open.Parent = TRXScript
+Open.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
+Open.Position = UDim2.new(0, 0, 0.510775924, 0)
+Open.Size = UDim2.new(0, 43, 0, 38)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "EZ?"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextSize = 16.000
+Open.MouseButton1Down:connect(function()
+	if main.Visible == false then
+		main.Visible = true
+		Open.Text = "Close"
+	else
+		main.Visible = false
+		Open.Text = "EZ?"
+	end
+end)
