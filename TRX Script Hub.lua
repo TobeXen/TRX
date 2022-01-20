@@ -4,7 +4,7 @@ local TRXScriptHub = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local label = Instance.new("TextLabel")
 local BruhHub = Instance.new("TextButton")
-local InfiniteYeild = Instance.new("TextButton")
+local InfiniteYield = Instance.new("TextButton")
 local PremierHub = Instance.new("TextButton")
 local ShindenScript = Instance.new("TextButton")
 local TRXScriptBETA = Instance.new("TextButton")
@@ -53,17 +53,17 @@ BruhHub.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
 end)
 
-InfiniteYeild.Name = "Infinite Yeild"
-InfiniteYeild.Parent = main
-InfiniteYeild.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
-InfiniteYeild.Position = UDim2.new(0.0250000004, 0, 0.361000001, 0)
-InfiniteYeild.Size = UDim2.new(0, 271, 0, 17)
-InfiniteYeild.Font = Enum.Font.SourceSans
-InfiniteYeild.Text = "Open Infinite Yeild"
-InfiniteYeild.TextColor3 = Color3.fromRGB(0, 0, 0)
-InfiniteYeild.TextSize = 16.000
+InfiniteYield.Name = "Infinite Yeild"
+InfiniteYield.Parent = main
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
+InfiniteYield.Position = UDim2.new(0.0250000004, 0, 0.361000001, 0)
+InfiniteYield.Size = UDim2.new(0, 271, 0, 17)
+InfiniteYield.Font = Enum.Font.SourceSans
+InfiniteYield.Text = "Open Infinite Yeild"
+InfiniteYield.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.TextSize = 16.000
 --Loadstring for Infinite Yeild
-InfiniteYeild.MouseButton1Down:connect(function()
+InfiniteYield.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://pastebin.com/raw/tzTXmYf2'),true))()
 end)
 
