@@ -8,11 +8,13 @@ local InfiniteYield = Instance.new("TextButton")
 local PremierHub = Instance.new("TextButton")
 local ShindenScript = Instance.new("TextButton")
 local TRXScriptBETA = Instance.new("TextButton")
+local BOHKHR = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
 
-game.StarterGui:SetCore("SendNotification", {Title="TRX Script Hub V1.5"; Text="Loaded"; Duration=5;})
+game.StarterGui:SetCore("SendNotification", {Title="TRX Script Hub V1.6"; Text="Loaded"; Duration=5;})
 
 --Properties:
+
 TRXScriptHub.Name = "TRX Script Hub"
 TRXScriptHub.Parent = game.CoreGui
 TRXScriptHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -34,7 +36,7 @@ label.BorderSizePixel = 0
 label.Position = UDim2.new(4.42378223e-09, 0, 0, 0)
 label.Size = UDim2.new(0, 287, 0, 22)
 label.Font = Enum.Font.SourceSans
-label.Text = "TRX Script Hub V1.5"
+label.Text = "TRX Script Hub V1.6"
 label.TextColor3 = Color3.fromRGB(255, 255, 255)
 label.TextSize = 14.000
 label.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -53,13 +55,13 @@ BruhHub.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
 end)
 
-InfiniteYield.Name = "Infinite Yeild"
+InfiniteYield.Name = "Infinite Yield"
 InfiniteYield.Parent = main
 InfiniteYield.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
 InfiniteYield.Position = UDim2.new(0.0250000004, 0, 0.361000001, 0)
 InfiniteYield.Size = UDim2.new(0, 271, 0, 17)
 InfiniteYield.Font = Enum.Font.SourceSans
-InfiniteYield.Text = "Open Infinite Yeild"
+InfiniteYield.Text = "Open Infinite Yield"
 InfiniteYield.TextColor3 = Color3.fromRGB(0, 0, 0)
 InfiniteYield.TextSize = 16.000
 --Loadstring for Infinite Yeild
@@ -217,6 +219,21 @@ TRXScriptBETA.TextSize = 16.000
 --Loadstring for TRX Script V1.5
 TRXScriptBETA.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/TobeXen/TRX-Scripts/main/TRX%20Script.lua"))()
+end)
+
+BOHKHR.Name = "BOH/KHR"
+BOHKHR.Parent = main
+BOHKHR.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
+BOHKHR.Position = UDim2.new(0.718379736, 0, 0.0129999965, 0)
+BOHKHR.Size = UDim2.new(0, 71, 0, 17)
+BOHKHR.Font = Enum.Font.SourceSans
+BOHKHR.Text = "BOH/KHR"
+BOHKHR.TextColor3 = Color3.fromRGB(0, 0, 0)
+BOHKHR.TextSize = 16.000
+--Loadstring/Paid key for BOH/KHR
+BOHKHR.MouseButton1Down:connect(function()
+	_G.wl_key=string.char(0x65,0x35,0x66,0x36,0x38,0x36,0x31,0x65,0x39,0x33,0x37,0x34,0x37,0x61,0x33,0x62,0x62,0x36,0x63,0x33,0x39,0x39,0x65,0x63,0x30,0x61,0x33,0x66,0x33,0x61,0x63,0x31,0x65,0x64,0x33,0x39,0x65,0x34,0x64,0x64)
+	loadstring(game:HttpGet("https://bend-over.space/.earlyaccess",true))()
 end)
 
 Open.Name = "Open"
