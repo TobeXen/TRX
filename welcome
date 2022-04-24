@@ -1,0 +1,1 @@
+game.StarterGui:SetCore("SendNotification", {Title="TRX Hub 1.2.3"; Text="Injected"; Duration=5;})
