@@ -12,6 +12,10 @@ local BOHKHR = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
 
 game.StarterGui:SetCore("SendNotification", {Title="TRX Script Hub V1.6"; Text="Loaded"; Duration=5;})
+if game.PlaceId == 1730877806 then
+	print("imagine playing gpo")
+end
+
 
 --Properties:
 
@@ -232,8 +236,14 @@ BOHKHR.TextColor3 = Color3.fromRGB(0, 0, 0)
 BOHKHR.TextSize = 16.000
 --Loadstring/Paid key for BOH/KHR
 BOHKHR.MouseButton1Down:connect(function()
-	_G.wl_key=string.char(0x65,0x35,0x66,0x36,0x38,0x36,0x31,0x65,0x39,0x33,0x37,0x34,0x37,0x61,0x33,0x62,0x62,0x36,0x63,0x33,0x39,0x39,0x65,0x63,0x30,0x61,0x33,0x66,0x33,0x61,0x63,0x31,0x65,0x64,0x33,0x39,0x65,0x34,0x64,0x64)
-	loadstring(game:HttpGet("https://bend-over.space/.earlyaccess",true))()
+	--[[
+    Kesh Hub Revival
+    Bend Over Hub
+    Paid Script
+    Buyer: Xen#9202
+--]]
+	_G.wl_key = 'e5f6861e93747a3bb6c399ec0a3f3ac1ed39e4dd'
+	loadstring(game:HttpGet('https://bend-over.space/.earlyaccess', true))()
 end)
 
 Open.Name = "Open"
