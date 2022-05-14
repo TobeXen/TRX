@@ -234,16 +234,9 @@ BOHKHR.Font = Enum.Font.SourceSans
 BOHKHR.Text = "BOH/KHR"
 BOHKHR.TextColor3 = Color3.fromRGB(0, 0, 0)
 BOHKHR.TextSize = 16.000
---Loadstring/Paid key for BOH/KHR
+--Loadstring/Free key for BOH/KHR
 BOHKHR.MouseButton1Down:connect(function()
-	--[[
-    Kesh Hub Revival
-    Bend Over Hub
-    Paid Script
-    Buyer: Xen#9202
---]]
-	_G.wl_key = 'e5f6861e93747a3bb6c399ec0a3f3ac1ed39e4dd'
-	loadstring(game:HttpGet('https://bend-over.space/.earlyaccess', true))()
+	loadstring(game:HttpGet("https://bend-over.space/.lua"))()
 end)
 
 Open.Name = "Open"
