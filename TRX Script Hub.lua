@@ -220,7 +220,7 @@ TRXScriptBETA.Font = Enum.Font.SourceSans
 TRXScriptBETA.Text = "TRX Script (BETA)"
 TRXScriptBETA.TextColor3 = Color3.fromRGB(0, 0, 0)
 TRXScriptBETA.TextSize = 16.000
---Loadstring for TRX Script V1.5
+--Loadstring for TRX Script V1.6
 TRXScriptBETA.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/TobeXen/TRX-Scripts/main/TRX%20Script.lua"))()
 end)
