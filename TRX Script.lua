@@ -11,9 +11,10 @@ local ESP = Instance.new("TextButton")
 local ForceCameraLock = Instance.new("TextButton")
 local FPS = Instance.new("TextButton")
 local CopyDiscord = Instance.new("TextButton")
+local AimbotFOV = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
 
-game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.5"; Text="Loaded"; Duration=5;})
+game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.6"; Text="Loaded"; Duration=5;})
 
 --Properties:
 
@@ -36,7 +37,7 @@ lable.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 lable.Position = UDim2.new(-0.000831738114, 0, 0, 0)
 lable.Size = UDim2.new(0, 244, 0, 24)
 lable.Font = Enum.Font.SourceSans
-lable.Text = "TRX Script V1.5"
+lable.Text = "TRX Script V1.6"
 lable.TextColor3 = Color3.fromRGB(255, 255, 255)
 lable.TextSize = 16.000
 
@@ -73,8 +74,8 @@ DexV3.TextSize = 24.000
 Aimbot.Name = "Aimbot"
 Aimbot.Parent = main
 Aimbot.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
-Aimbot.Position = UDim2.new(0.0370000005, 0, 0.550000012, 0)
-Aimbot.Size = UDim2.new(0, 224, 0, 17)
+Aimbot.Position = UDim2.new(0.0369999371, 0, 0.550000012, 0)
+Aimbot.Size = UDim2.new(0, 111, 0, 17)
 Aimbot.Font = Enum.Font.SourceSans
 Aimbot.Text = "Aimbot"
 Aimbot.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -120,6 +121,16 @@ CopyDiscord.Text = "Copy Discord"
 CopyDiscord.TextColor3 = Color3.fromRGB(0, 0, 0)
 CopyDiscord.TextSize = 24.000
 
+AimbotFOV.Name = "Aimbot FOV"
+AimbotFOV.Parent = main
+AimbotFOV.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
+AimbotFOV.Position = UDim2.new(0.500114679, 0, 0.550000012, 0)
+AimbotFOV.Size = UDim2.new(0, 111, 0, 17)
+AimbotFOV.Font = Enum.Font.SourceSans
+AimbotFOV.Text = "Aimbot FOV"
+AimbotFOV.TextColor3 = Color3.fromRGB(0, 0, 0)
+AimbotFOV.TextSize = 24.000
+
 Open.Name = "Open"
 Open.Parent = TRXScript
 Open.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
@@ -132,11 +143,11 @@ Open.TextSize = 16.000
 
 -- Scripts:
 
-local function WCYWU_fake_script() -- Speed.LocalScript 
+local function UQNNJ_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	Speed.MouseButton1Down:connect(function()
-		game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.5"; Text="SPEED BOOOOOIIII"; Duration=5;})
+		game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.6"; Text="SPEED BOOOOOIIII"; Duration=5;})
 		--Speed
 		local speed = 100
 	
@@ -144,8 +155,8 @@ local function WCYWU_fake_script() -- Speed.LocalScript
 		game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = (speed * 1.5)
 	end)
 end
-coroutine.wrap(WCYWU_fake_script)()
-local function SQHJ_fake_script() -- ClickTP.LocalScript 
+coroutine.wrap(UQNNJ_fake_script)()
+local function KKRTVAW_fake_script() -- ClickTP.LocalScript 
 	local script = Instance.new('LocalScript', ClickTP)
 
 	ClickTP.MouseButton1Down:connect(function()
@@ -181,15 +192,15 @@ local function SQHJ_fake_script() -- ClickTP.LocalScript
 			_G.WRDClickTeleport = not _G.WRDClickTeleport
 			--Notify
 			if _G.WRDClickTeleport then
-				game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.5"; Text="Click teleport enabled"; Duration=5;})
+				game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.6"; Text="Click teleport enabled"; Duration=5;})
 			else
-				game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.5"; Text="Click teleport disabled"; Duration=5;})
+				game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.6"; Text="Click teleport disabled"; Duration=5;})
 			end
 		end
 	end)
 end
-coroutine.wrap(SQHJ_fake_script)()
-local function EERTOYB_fake_script() -- DexV3.LocalScript 
+coroutine.wrap(KKRTVAW_fake_script)()
+local function CVOJCZN_fake_script() -- DexV3.LocalScript 
 	local script = Instance.new('LocalScript', DexV3)
 
 	DexV3.MouseButton1Down:connect(function()
@@ -256,10 +267,11 @@ local function EERTOYB_fake_script() -- DexV3.LocalScript
 		Load(Dex)
 	end)
 end
-coroutine.wrap(EERTOYB_fake_script)()
-local function HWVRP_fake_script() -- Aimbot.LocalScript 
+coroutine.wrap(CVOJCZN_fake_script)()
+local function KLRJQ_fake_script() -- Aimbot.LocalScript 
 	local script = Instance.new('LocalScript', Aimbot)
 
+	Aimbot.MouseButton1Down:connect(function()
 	local Camera = workspace.CurrentCamera
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
@@ -267,6 +279,8 @@ local function HWVRP_fake_script() -- Aimbot.LocalScript
 	local TweenService = game:GetService("TweenService")
 	local LocalPlayer = Players.LocalPlayer
 	local Holding = false
+		
+	game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.6"; Text="Aimbot Enabled"; Duration=5;})
 	
 	_G.AimbotEnabled = true
 	_G.TeamCheck = false -- If set to true then the script would only lock your aim at enemy team members.
@@ -336,10 +350,11 @@ local function HWVRP_fake_script() -- Aimbot.LocalScript
 		if Holding == true and _G.AimbotEnabled == true then
 			TweenService:Create(Camera, TweenInfo.new(_G.Sensitivity, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {CFrame = CFrame.new(Camera.CFrame.Position, GetClosestPlayer().Character[_G.AimPart].Position)}):Play()
 		end
-	end)
+		end)
+		end)
 end
-coroutine.wrap(HWVRP_fake_script)()
-local function CITYDW_fake_script() -- ESP.LocalScript 
+coroutine.wrap(KLRJQ_fake_script)()
+local function SCZMJ_fake_script() -- ESP.LocalScript 
 	local script = Instance.new('LocalScript', ESP)
 
 	ESP.MouseButton1Down:connect(function()
@@ -358,7 +373,7 @@ local function CITYDW_fake_script() -- ESP.LocalScript
 		_G.WRDESPTracers = nil --Displays lines leading to other players (Defaults to false)
 		_G.WRDESPNames = nil --Displays the names of the players within the ESP box (Defaults to true)
 	
-		game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.5"; Text="ESP enabled"; Duration=5;})
+		game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.6"; Text="ESP enabled"; Duration=5;})
 	
 		--Dont edit below
 	
@@ -770,8 +785,8 @@ local function CITYDW_fake_script() -- ESP.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CITYDW_fake_script)()
-local function MJWX_fake_script() -- ForceCameraLock.LocalScript 
+coroutine.wrap(SCZMJ_fake_script)()
+local function QBFLU_fake_script() -- ForceCameraLock.LocalScript 
 	local script = Instance.new('LocalScript', ForceCameraLock)
 
 	ForceCameraLock.MouseButton1Down:connect(function()
@@ -783,7 +798,7 @@ local function MJWX_fake_script() -- ForceCameraLock.LocalScript
 		local run = game:GetService("RunService")
 		local uis = game:GetService("UserInputService")
 	
-		game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.5"; Text="CameraLock"; Duration=5;})
+		game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.6"; Text="CameraLock"; Duration=5;})
 	
 		plr.CameraMaxZoomDistance = 10
 		plr.CameraMinZoomDistance = 0
@@ -799,8 +814,8 @@ local function MJWX_fake_script() -- ForceCameraLock.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(MJWX_fake_script)()
-local function CKQJXZS_fake_script() -- FPS.LocalScript 
+coroutine.wrap(QBFLU_fake_script)()
+local function KPAIVKU_fake_script() -- FPS.LocalScript 
 	local script = Instance.new('LocalScript', FPS)
 
 	FPS.MouseButton1Down:connect(function()
@@ -810,7 +825,7 @@ local function CKQJXZS_fake_script() -- FPS.LocalScript
 		local Fps = Instance.new("TextLabel")
 	
 		--Properties:
-		game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.5"; Text="FPS Counter Enabled"; Duration=5;})
+		game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.6"; Text="FPS Counter Enabled"; Duration=5;})
 		FpsandPingcounter.Name = "Fps and Ping counter"
 		FpsandPingcounter.Parent = game.CoreGui
 		FpsandPingcounter.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -847,17 +862,126 @@ local function CKQJXZS_fake_script() -- FPS.LocalScript
 		coroutine.wrap(ECZUFHQ_fake_script)()
 	end)
 end
-coroutine.wrap(CKQJXZS_fake_script)()
-local function JFAXR_fake_script() -- CopyDiscord.LocalScript 
+coroutine.wrap(KPAIVKU_fake_script)()
+local function HXUWSV_fake_script() -- CopyDiscord.LocalScript 
 	local script = Instance.new('LocalScript', CopyDiscord)
 
 	CopyDiscord.MouseButton1Down:connect(function()
-		game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.5"; Text="Dicord copied"; Duration=5;})
+		game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.6"; Text="Dicord copied"; Duration=5;})
 		setclipboard("https://discord.gg/VkyYHWBYsf")
 	end)
 end
-coroutine.wrap(JFAXR_fake_script)()
-local function HLSSDYQ_fake_script() -- Open.LocalScript 
+coroutine.wrap(HXUWSV_fake_script)()
+local function JUGZF_fake_script() -- AimbotFOV.LocalScript 
+	local script = Instance.new('LocalScript', AimbotFOV)
+
+	AimbotFOV.MouseButton1Down:connect(function()
+	local Camera = workspace.CurrentCamera
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local UserInputService = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
+	local LocalPlayer = Players.LocalPlayer
+	local Holding = false
+		
+	game.StarterGui:SetCore("SendNotification", {Title="TRX Script V1.6"; Text="Aimbot FOV Enabled"; Duration=5;})
+	
+	_G.AimbotEnabled = true
+	_G.TeamCheck = false -- If set to true then the script would only lock your aim at enemy team members.
+	_G.AimPart = "Head" -- Where the aimbot script would lock at.
+	_G.Sensitivity = 0 -- How many seconds it takes for the aimbot script to officially lock onto the target's aimpart.
+	
+	_G.CircleSides = 64 -- How many sides the FOV circle would have.
+	_G.CircleColor = Color3.fromRGB(255, 255, 255) -- (RGB) Color that the FOV circle would appear as.
+	_G.CircleTransparency = 0.7 -- Transparency of the circle.
+	_G.CircleRadius = 80 -- The radius of the circle / FOV.
+	_G.CircleFilled = false -- Determines whether or not the circle is filled.
+	_G.CircleVisible = true -- Determines whether or not the circle is visible.
+	_G.CircleThickness = 0 -- The thickness of the circle.
+	
+	local FOVCircle = Drawing.new("Circle")
+	FOVCircle.Position = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+	FOVCircle.Radius = _G.CircleRadius
+	FOVCircle.Filled = _G.CircleFilled
+	FOVCircle.Color = _G.CircleColor
+	FOVCircle.Visible = _G.CircleVisible
+	FOVCircle.Radius = _G.CircleRadius
+	FOVCircle.Transparency = _G.CircleTransparency
+	FOVCircle.NumSides = _G.CircleSides
+	FOVCircle.Thickness = _G.CircleThickness
+	
+	local function GetClosestPlayer()
+		local MaximumDistance = _G.CircleRadius
+		local Target = nil
+	
+		for _, v in next, Players:GetPlayers() do
+			if v.Name ~= LocalPlayer.Name then
+				if _G.TeamCheck == true then
+					if v.Team ~= LocalPlayer.Team then
+						if v.Character ~= nil then
+							if v.Character:FindFirstChild("HumanoidRootPart") ~= nil then
+								if v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("Humanoid").Health ~= 0 then
+									local ScreenPoint = Camera:WorldToScreenPoint(v.Character:WaitForChild("HumanoidRootPart", math.huge).Position)
+									local VectorDistance = (Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y) - Vector2.new(ScreenPoint.X, ScreenPoint.Y)).Magnitude
+	
+									if VectorDistance < MaximumDistance then
+										Target = v
+									end
+								end
+							end
+						end
+					end
+				else
+					if v.Character ~= nil then
+						if v.Character:FindFirstChild("HumanoidRootPart") ~= nil then
+							if v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("Humanoid").Health ~= 0 then
+								local ScreenPoint = Camera:WorldToScreenPoint(v.Character:WaitForChild("HumanoidRootPart", math.huge).Position)
+								local VectorDistance = (Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y) - Vector2.new(ScreenPoint.X, ScreenPoint.Y)).Magnitude
+	
+								if VectorDistance < MaximumDistance then
+									Target = v
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	
+		return Target
+	end
+	
+	UserInputService.InputBegan:Connect(function(Input)
+		if Input.UserInputType == Enum.UserInputType.MouseButton2 then
+			Holding = true
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(Input)
+		if Input.UserInputType == Enum.UserInputType.MouseButton2 then
+			Holding = false
+		end
+	end)
+	
+	RunService.RenderStepped:Connect(function()
+		FOVCircle.Position = Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y)
+		FOVCircle.Radius = _G.CircleRadius
+		FOVCircle.Filled = _G.CircleFilled
+		FOVCircle.Color = _G.CircleColor
+		FOVCircle.Visible = _G.CircleVisible
+		FOVCircle.Radius = _G.CircleRadius
+		FOVCircle.Transparency = _G.CircleTransparency
+		FOVCircle.NumSides = _G.CircleSides
+		FOVCircle.Thickness = _G.CircleThickness
+	
+		if Holding == true and _G.AimbotEnabled == true then
+			TweenService:Create(Camera, TweenInfo.new(_G.Sensitivity, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {CFrame = CFrame.new(Camera.CFrame.Position, GetClosestPlayer().Character[_G.AimPart].Position)}):Play()
+		end
+		end)
+		end)
+end
+coroutine.wrap(JUGZF_fake_script)()
+local function GKXLE_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	Open.Active = true
@@ -872,4 +996,4 @@ local function HLSSDYQ_fake_script() -- Open.LocalScript
 		end
 	end)
 end
-coroutine.wrap(HLSSDYQ_fake_script)()
+coroutine.wrap(GKXLE_fake_script)()
