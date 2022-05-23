@@ -1,3 +1,6 @@
+-- Gui to Lua
+-- Version: 3.2
+
 -- Instances:
 
 local TRXScriptHub = Instance.new("ScreenGui")
@@ -5,17 +8,16 @@ local main = Instance.new("Frame")
 local label = Instance.new("TextLabel")
 local BruhHub = Instance.new("TextButton")
 local InfiniteYield = Instance.new("TextButton")
-local PremierHub = Instance.new("TextButton")
+local PremierHubX = Instance.new("TextButton")
 local ShindenScript = Instance.new("TextButton")
 local TRXScriptBETA = Instance.new("TextButton")
 local BOHKHR = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
 
-game.StarterGui:SetCore("SendNotification", {Title="TRX Script Hub V1.6"; Text="Loaded"; Duration=5;})
+game.StarterGui:SetCore("SendNotification", {Title="TRX Script Hub V1.7"; Text="Loaded"; Duration=5;})
 if game.PlaceId == 1730877806 then
 	print("imagine playing gpo")
 end
-
 
 --Properties:
 
@@ -40,7 +42,7 @@ label.BorderSizePixel = 0
 label.Position = UDim2.new(4.42378223e-09, 0, 0, 0)
 label.Size = UDim2.new(0, 287, 0, 22)
 label.Font = Enum.Font.SourceSans
-label.Text = "TRX Script Hub V1.6"
+label.Text = "TRX Script Hub V1.7"
 label.TextColor3 = Color3.fromRGB(255, 255, 255)
 label.TextSize = 14.000
 label.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -73,18 +75,18 @@ InfiniteYield.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://pastebin.com/raw/tzTXmYf2'),true))()
 end)
 
-PremierHub.Name = "Premier  Hub"
-PremierHub.Parent = main
-PremierHub.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
-PremierHub.Position = UDim2.new(0.0250000004, 0, 0.513000011, 0)
-PremierHub.Size = UDim2.new(0, 271, 0, 17)
-PremierHub.Font = Enum.Font.SourceSans
-PremierHub.Text = "Open Premier Hub"
-PremierHub.TextColor3 = Color3.fromRGB(0, 0, 0)
-PremierHub.TextSize = 16.000
+PremierHubX.Name = "Premier  Hub X"
+PremierHubX.Parent = main
+PremierHubX.BackgroundColor3 = Color3.fromRGB(157, 121, 50)
+PremierHubX.Position = UDim2.new(0.0250000004, 0, 0.513000011, 0)
+PremierHubX.Size = UDim2.new(0, 271, 0, 17)
+PremierHubX.Font = Enum.Font.SourceSans
+PremierHubX.Text = "Open Premier Hub X"
+PremierHubX.TextColor3 = Color3.fromRGB(0, 0, 0)
+PremierHubX.TextSize = 16.000
 --Loadstring for Premier Hub
-PremierHub.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/PremierHub/Data/main/code.lua"))()
+PremierHubX.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Premier/main/PremierX-Free.lua"))()
 end)
 
 ShindenScript.Name = "Shinden Script"
