@@ -97,6 +97,7 @@ SoulWarScript.TextSize = 16.000
 --Loadstring for Soul War Script
 SoulWarScript.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/itsyouranya/free/main/soulwar.lua'),true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/cueshut/saves/main/soulworld"))()
 end)
 
 TRXScript.Name = "TRX Script"
